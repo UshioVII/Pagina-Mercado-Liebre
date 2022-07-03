@@ -1,0 +1,125 @@
+
+/* Header */
+
+.header__logo img{
+    width: 175px;
+    margin: 10px 0px 5px 15px;
+}
+
+.header{
+    background-color: var(--ColorAmarillo);
+    background-size: 101%;
+}
+
+
+.header__buscador{
+    margin-left: 10px;
+}
+
+.header__buscador__boton{
+    margin-left: 10px;
+}
+
+.header__buscador__boton button{
+    margin-bottom: 15px;
+}
+
+.header__section__head {
+
+}
+
+.header__section__tarjetaDeCredito a{ /* <a> Que esta ebajo del buscador */
+    text-decoration: none;
+    font-size: small;
+    margin-left: 39px;
+    color: black;
+    font-family: "Roboto";
+}
+
+.header__section__menu ul li, a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+.header__section__menu{
+    margin-left: 0px;
+}
+
+.header__section__boton button {
+    margin-left: 160px;
+    padding: 6px 8px 6px 8px;
+    background-color: var(--ColorCeleste);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.header__section__boton{
+    
+}
+
+/* Main */
+
+.main{
+    background-color: var(--ColorGrisClaro);
+}
+
+.main h3 { /*  Tutulos del main */
+    margin-top: 21.2801px;
+    margin-bottom: 21.280px;
+}
+
+.main__articulo__producto{
+    background-color: #ffff;
+    border: solid rgb(207, 205, 205) 1px;
+    margin-bottom: 13px;
+}
+
+.main__articulo__producto__precio{
+    font-size: 18px;
+}
+.main__articulo__producto__descuento{
+    font-size: 16px;
+    color: var(--ColorVerde);
+}
+
+.main__articulo__producto h4{
+    color:var(--ColorGrisOscuro)
+}
+
+.main__articulo__producto h4, p {
+    margin-left: 5px;
+}
+
+.main__banner{
+    margin: 0px 0px 0px -7px;
+}
+
+
+
+/* Footer */
+
+.footer{
+    background-color: #ffff;
+    border: solid rgb(207, 205, 205) 1px;
+}
+
+.footer__section__article{
+    text-align: center;
+    margin: 10px 0px 20px 0;
+}
+
+.footer__section__article i{
+    color: var(--ColorCeleste);
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.footer__section__article p, h3{
+    margin: 0px;
+}
+
+.footer__section__article p, h5{
+    color: var(--ColorGrisOscuro);
+}
