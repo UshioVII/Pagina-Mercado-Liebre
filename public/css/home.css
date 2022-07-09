@@ -171,9 +171,9 @@ h5 {
 }
 
 
-/* MEDIA QUERY | Desktop Trucho | 769px*/
+/* MEDIA QUERY | Desktop Trucho | 1024px*/
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
     /* HEADER CONTENT*/
     .header__boton button {
@@ -192,5 +192,5 @@ h5 {
 /* MAIN CONTENT */
     .main__articulo__producto {
             box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        }
+    }
 }
