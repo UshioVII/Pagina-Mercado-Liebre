@@ -12,12 +12,17 @@
         --TamañoDescripciones: 16px;
 }
 
-.home{
-        margin: 0px 0px 0px;
+* {
+        box-sizing: border-box;
+        margin: 0;
 }
 
-h3, h4, h5, p{
+h2, h3, h4, h5, p{
         font-family: "Roboto";
+}
+
+h3, h2, h4{
+        color: var(--ColorGrisOscuro);
 }
 
 ol, ul{

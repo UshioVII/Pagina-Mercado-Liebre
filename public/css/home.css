@@ -1,125 +1,196 @@
-
 /* Header */
 
-.header__logo img{
+.header__logo img {
     width: 175px;
     margin: 10px 0px 5px 15px;
 }
 
-.header{
+.header {
     background-color: var(--ColorAmarillo);
     background-size: 101%;
 }
 
 
-.header__buscador{
-    margin-left: 10px;
+.header__buscador {
+    margin: 10px 0px 10px 10px;
 }
 
-.header__buscador__boton{
-    margin-left: 10px;
+.header__buscador button {
+    margin: 0px 0px 0px 0px;
 }
 
-.header__buscador__boton button{
-    margin-bottom: 15px;
+.header__buscador input {
+    margin-right: -3px;
 }
 
-.header__section__head {
+.header__section__head {}
 
-}
-
-.header__section__tarjetaDeCredito a{ /* <a> Que esta ebajo del buscador */
+.header__section__tarjetaDeCredito a {
+    /* <a> Que esta ebajo del buscador */
     text-decoration: none;
     font-size: small;
-    margin-left: 39px;
     color: black;
     font-family: "Roboto";
+    display: flex;
+    justify-content: center;
 }
 
-.header__section__menu ul li, a {
-    text-decoration: none;
-    color: black;
-    font-size: small;
-}
-.header__section__menu{
-    margin-left: 0px;
+.header__section__menu {
+    display: none;
 }
 
-.header__section__boton button {
-    margin-left: 160px;
+
+.header__boton button {
     padding: 6px 8px 6px 8px;
+    margin: 10px 10px 10px 10px;
     background-color: var(--ColorCeleste);
     color: white;
     border: 0px;
     border-radius: 5px;
-    justify-content: center;
 }
 
-.header__section__boton{
-    
+nav.header__boton {
+    display: flex;
+    justify-content: center;
 }
 
 /* Main */
 
-.main{
+.main {
     background-color: var(--ColorGrisClaro);
 }
 
-.main h3 { /*  Tutulos del main */
+.main h3 {
+    /*  Tutulos del main */
     margin-top: 21.2801px;
     margin-bottom: 21.280px;
 }
 
-.main__articulo__producto{
+.main__articulo__producto {
     background-color: #ffff;
     border: solid rgb(207, 205, 205) 1px;
-    margin-bottom: 13px;
+    margin: 5%;
+    align-items: center;
+    width: 90%;
 }
 
-.main__articulo__producto__precio{
+.main__articulo__producto__precio {
     font-size: 18px;
 }
-.main__articulo__producto__descuento{
+
+.main__articulo__producto__descuento {
     font-size: 16px;
     color: var(--ColorVerde);
 }
 
-.main__articulo__producto h4{
-    color:var(--ColorGrisOscuro)
+.main__articulo__producto h4 {
+    color: var(--ColorGrisOscuro);
+    margin: 10px 10px 10px 10px;
 }
 
-.main__articulo__producto h4, p {
-    margin-left: 5px;
+.main__articulo__producto p {
+    margin: 0px 0px 0px 10px;
 }
 
-.main__banner{
+.main__articulo__producto i {
+    border-top: solid 1px #ebebeb;
+    border-radius: 50%;
+    border: solid 1px var(--ColorVerde);
+    padding: 15px;
+    color: var(--ColorVerde);
+    ;
+    margin: 0px 0px 0px 10px;
+}
+
+.main__banner {
     margin: 0px 0px 0px -7px;
 }
 
-
+.main__banner img {
+    width: 100%;
+}
 
 /* Footer */
 
-.footer{
+.footer {
     background-color: #ffff;
     border: solid rgb(207, 205, 205) 1px;
 }
 
-.footer__section__article{
+.footer__section__article {
     text-align: center;
     margin: 10px 0px 20px 0;
+    box-sizing: border-box;
 }
 
-.footer__section__article i{
+.footer__section__article i {
     color: var(--ColorCeleste);
     margin-bottom: 10px;
     font-size: 2em;
 }
 
-.footer__section__article p, h3{
+.footer__section__article p,
+h3 {
     margin: 0px;
 }
 
-.footer__section__article p, h5{
+.footer__section__article p,
+h5 {
     color: var(--ColorGrisOscuro);
+}
+
+/* MEDIA QUERY | Tablet Trucha | 361px*/
+
+@media (min-width: 768px) {
+
+    /* HEADER */
+    .header__logo img {
+        width: 250px;
+    }
+
+    .header__boton button {
+        display: none;
+    }
+
+    .header__section__menu {
+        margin-bottom: 15px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__section__menu ul li,
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: small;
+    }
+    .main__articulo__producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+
+/* MEDIA QUERY | Desktop Trucho | 769px*/
+
+@media (min-width: 768px) {
+
+    /* HEADER CONTENT*/
+    .header__boton button {
+        display: none;
+    }
+    .header__section__menu {
+        margin-bottom: 15px;
+        margin-left: 0px;
+    }
+    .header__section__menu ul li,
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: small;
+    }
+/* MAIN CONTENT */
+    .main__articulo__producto {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
 }
