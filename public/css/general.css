@@ -1,32 +1,44 @@
 :root {
-        --ColorAmarillo: #EAC926;
-        --ColorAzul: #03264C;
-        --ColorCeleste: #1259c3;
-        --ColorGrisOscuro: #666;
-        --ColorGrisClaro: #ebebeb;
-        --ColorVerde: #39b54a;
-        --TamañoCuerposDetexto: 12px;
-        --TamañoTitulares: 24px;
-        --TamañoPrecios: 18px;
-        --TamañoDescuentos: 16px;
-        --TamañoDescripciones: 16px;
+    --ColorAmarillo: #EAC926;
+    --ColorAzul: #03264C;
+    --ColorCeleste: #1259c3;
+    --ColorGrisOscuro: #666;
+    --ColorGrisClaro: #ebebeb;
+    --ColorVerde: #39b54a;
+    --TamañoCuerposDetexto: 12px;
+    --TamañoTitulares: 24px;
+    --TamañoPrecios: 18px;
+    --TamañoDescuentos: 16px;
+    --TamañoDescripciones: 16px;
 }
 
 * {
-        box-sizing: border-box;
-        margin: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-h2, h3, h4, h5, p{
-        font-family: "Roboto";
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: "Roboto";
 }
 
-h3, h2, h4{
-        color: var(--ColorGrisOscuro);
+h3,
+h2,
+h4 {
+    color: var(--ColorGrisOscuro);
 }
 
-ol, ul{
-        padding: 0;
-        list-style: none;
-        font-family: "Roboto";
+ol,
+ul {
+    padding: 0;
+    list-style: none;
+    font-family: "Roboto";
+}
+
+body {
+    background-color: var(--ColorAmarillo);
 }
