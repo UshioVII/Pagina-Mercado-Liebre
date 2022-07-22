@@ -33,9 +33,10 @@
     border-radius: 5px;
     height: 32px;
     padding: 5px;
-    background-color: #ffff;
     width: 45%;
     margin: 5px;
+    background-color: #ffff;
+    align-self: center;
 }
 
 .header__content__top input {
