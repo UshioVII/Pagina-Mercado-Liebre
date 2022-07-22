@@ -1,5 +1,52 @@
     /* Header */
     
+    .header__general {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .header__general p {
+        text-align: center;
+    }
+    
+    .header__content__top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .header__content__top a {
+        width: 50%;
+    }
+    
+    .header__content__top form {
+        display: flex;
+        border-radius: 5px;
+        height: 32px;
+        padding: 5px;
+        background-color: #ffff;
+        width: 45%;
+        margin: 5px;
+    }
+    
+    .header__content__top input {
+        width: 86%;
+        border-radius: 5px;
+        border: none;
+        background-color: #ffff;
+        font-size: 13px;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .header__content__top form button {
+        width: 15%;
+        border: none;
+        background-color: #ffff;
+        padding: 5px;
+        color: var(--ColorGrisOscuro);
+    }
+    
     .header__logo {
         width: 50%;
         padding: 5px;
@@ -11,23 +58,11 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
     }
     
     .header__buscador {
         width: 50%;
         padding: 2%;
-    }
-    
-    .header__buscador input {
-        border-radius: 5px;
-        border: none;
-        background-color: #ffff;
-        font-size: 13px;
-        width: 80%;
-        height: 30px;
-        text-align: center;
-        margin: 0 -9px 0 0;
     }
     
     .header__buscador button {
@@ -48,13 +83,14 @@
         text-align: center;
     }
     
-    .header__section__tarjetaDeCredito a {
+    .header__section__tarjetaDeCredito {
         padding: 10px 0 10px 0;
         text-decoration: none;
         font-size: small;
         color: black;
         font-family: "Roboto";
-        font-weight: 600;
+        font-weight: 300;
+        padding: 10px 15px 10px 15px;
     }
     
     .header__section__menu {
@@ -68,9 +104,16 @@
         color: white;
         border: solid rgb(107, 107, 107) 1px;
         border-radius: 5px;
+        display: flex;
     }
     
-    nav.header__boton {}
+    nav.header__boton {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
     /* Main */
     
     .main {
@@ -98,7 +141,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 10px
+        padding: 10px;
     }
     
     .main__articulo__producto div div {
@@ -195,14 +238,6 @@
     
     @media (min-width: 768px) {
         /* HEADER */
-        .header {
-            display: flex;
-            box-sizing: none;
-            flex-direction: row;
-            align-items: center;
-            flex-wrap: nowrap;
-            text-align: center;
-        }
         .header__logo {
             width: 50%;
         }
@@ -236,18 +271,21 @@
             border-radius: 0;
         }
         .header__section__menu {
-            margin-bottom: 15px;
-            margin-left: 0px;
             display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px 20px 0;
         }
-        .header__section__tarjetaDeCredito {
-            width: 266px;
-        }
-        .header__section__menu ul li,
-        a {
+        .header__section__menu ul li a {
             text-decoration: none;
             color: black;
             font-size: small;
+            display: flex;
+            padding: 13px 5px;
+        }
+        .header__section__menu ul {
+            display: flex;
+            flex-direction: row;
         }
         /* MAIN CONTENT */
         .main__articulo__producto {
@@ -334,6 +372,6 @@
             position: relative;
             text-align: center;
             right: 35px;
-            padding-left: 20px
+            padding-left: 20px;
         }
     }
