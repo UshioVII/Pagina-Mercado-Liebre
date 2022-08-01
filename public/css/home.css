@@ -119,6 +119,18 @@
     width: 90%;
 }
 
+.main__articulo__producto {
+    transition: 2s;
+}
+
+.main__articulo__producto:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.main__articulo__producto:hover h4 {
+    height: 50px;
+}
+
 .main__articulo__producto img {
     border-bottom: solid var(--ColorGrisClaro) 2px;
 }
@@ -149,24 +161,13 @@
     width: 70%;
 }
 
-.main__articulo__producto__precio--roto {
-    font-size: 18px;
-    padding: 10px 0 0 10px;
-    width: 30%;
-}
-
-.main__articulo__producto__descuento--roto {
-    /* no se mueve */
-    font-size: 16px;
-    color: var(--ColorVerde);
-    padding: 10px 0 0 10px;
-    width: 70%;
-}
-
 .main__articulo__producto h4 {
     color: var(--ColorGrisOscuro);
-    margin: 10px 10px 10px 10px;
-    display: none;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 1s;
+    padding-left: 20px;
 }
 
 .main__articulo__producto p {
@@ -183,6 +184,11 @@
     position: relative;
     top: -35px;
     right: -220px;
+    transition: 0.5s;
+}
+
+.main__articulo__producto i:hover {
+    transform: rotate(360deg);
 }
 
 .main__banner {
@@ -276,6 +282,46 @@ h5 {
         text-decoration: none;
         color: black;
         font-size: small;
+<<<<<<< HEAD
+=======
+        display: flex;
+        padding: 13px 5px;
+    }
+    /* MAIN CONTENT */
+    .main__articulo__producto {
+        width: 40%;
+    }
+    .main__articulo__producto i {
+        border-top: solid 1px #ebebeb;
+        border-radius: 50%;
+        border: solid 1px var(--ColorVerde);
+        padding: 10px;
+        color: var(--ColorVerde);
+        margin: 0px 0px 0px 10px;
+        position: relative;
+        top: -35px;
+        left: 230px;
+    }
+    .main__section__article {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .main__articulo__producto__precio {
+        width: 30%;
+>>>>>>> master
+    }
+    /* Footer */
+    .footer__section h5 {
+        padding: 10px;
+    }
+    .footer__section--content {
+        display: flex;
+        justify-content: space-between;
+        font-size: 70%;
+    }
+    .footer__section__article {
+        padding: 10px;
     }
 }
 
@@ -358,10 +404,13 @@ h5 {
     /* MAIN CONTENT */
     
     .main__articulo__producto {
+<<<<<<< HEAD
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     
     .main__articulo__producto {
+=======
+>>>>>>> master
         margin: 10px;
         flex-grow: 1;
     }
