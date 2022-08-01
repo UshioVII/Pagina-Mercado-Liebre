@@ -1,0 +1,53 @@
+/* MAIN*/
+
+.main__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--ColorGrisClaro);
+}
+
+fieldset {
+    border: 0;
+}
+
+.main__form__input {
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    margin: 20px;
+    width: 85%;
+}
+
+label {
+    font-weight: 700;
+    font-family: "Roboto";
+    padding: 10px;
+}
+
+select {
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    margin: 5px;
+    width: 85%;
+}
+
+#submit {
+    background-color: var(--ColorCeleste);
+    color: var(--ColorGrisClaro);
+}
+
+#reset {
+    background-color: var(--ColorCeleste);
+    color: var(--ColorGrisClaro);
+}
+
+@media (min-width: 1024px) {
+    .main__form__input {
+        width: 30%;
+    }
+    select {
+        width: 30%;
+    }
+}

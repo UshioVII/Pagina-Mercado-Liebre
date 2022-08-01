@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ae7c764a16.js" crossorigin="anonymous"></script>
-    <title>Home</title>
+    <title>Register</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body class="home">
+<body>
     <header class="header">
         <div class="header__general">
             <div class="header__content__top">
@@ -32,105 +32,73 @@
                 <li><a href="">Ayuda</a></li>
             </ul>
             <ul>
-                <a href="/register">
-                    <li>Créatu cuenta <i class="fa-regular fa-id-card"></i></li>
-                </a>
-                <a href="/login">
-                    <li>Ingresá<i class="fa-solid fa-right-to-bracket"></i></li>
-                </a>
-                <a href="">
-                    <li>Mis compras <i class="fa-solid fa-basket-shopping"></i>
-                        <li>
-                </a>
+                <li><a href="/register">Créatu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href=""> Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
         </nav>
         <nav class="header__boton">
             <button><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
+
     <main class="main__register">
         <fieldset>
-            <form action="" method="post">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre">
-                </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido">
-                </div>
-                <div style="width: 102%;">
-                    <label for="nombreusuario">Nombre de usuario:</label>
-                    <input type="text" name="nombreusuario" id="nombreusuario">
-                </div>
-                <div>
-                    <label for="fechanacimiento">Fecha de nacimiento:</label>
-                    <input type="date" name="fechanacimiento" id="fechanacimiento">
-                </div>
-                <div>
-                    <label for="domicilio">Domicilio:</label>
-                    <input type="text" name="domicilio" id="domicilio">
-                </div>
-                <div>
-                    <label for="perfil">Perfil:</label>
-                    <select name="perfil" id="perfil">
-                        <option value="comprador">Comprador</option>
-                        <option value="vendedor">Vendedor</option>
-                    </select>
-                </div>
-                <div>
-                    <div>
-                        <label for="categoria">Categoria:</label>
-                        <select name="categoria" id="categoria">
-                    <option value="electro">Electro</option>
-                    <option value="moda">Moda</option>
-                    <option value="hogar">Hogar</option>
-                    <option value="jugueteria">Jugueteria</option>
-                    <option value="vidasana">Vida sana</option>
-                </select>
-                    </div>
-                    <div>
-                        <label for="fotousuario">Foto de usuario:</label>
-                        <input type="file" name="fotousuario" id="fotousuario">
-                    </div>
-                    <div>
-                        <label for="contrasena">Contraseña:</label>
-                        <input type="password" name="contrasena" id="contrasena">
-                    </div>
-                    <div style="width: 107%;">
-                        <label for="confirmarcontrasena">Confirmar contraseña:</label>
-                        <input type="password" name="confirmarcontrasena" id="confirmarcontrasena">
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
-                    </div>
+            <form class="main__form" action="" method="post">
+                <input class="main__form__input" type="text" name="nombreyapellido" id="nombre" placeholder="Nombre y appelido">
+                <input class="main__form__input" type="text" name="nombreusuario" id="nombreusuario" placeholder="Nombre de usuario">
+                <input class="main__form__input" type="text" name="email" id="email" placeholder="E-mail">
+                <label for="fechanacimiento">Fecha de nacimiento</label>
+                <input class="main__form__input" type="date" name="fechanacimiento" id="fechanacimiento">
+                <input class="main__form__input" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+                <label for="perfil">Perfil</label>
+                <select name="perfil" id="perfil">
+                    <option value="comprador">Comprador</option>
+                    <option value="vendedor">Vendedor</option>
+            </select>
+                <label for="categoria">Categoria</label>
+                <select name="categoria" id="categoria">
+                <option value="electro">Electro</option>
+                <option value="moda">Moda</option>
+                <option value="hogar">Hogar</option>
+                <option value="jugueteria">Jugueteria</option>
+                <option value="vidasana">Vida sana</option>
+            </select>
+                <label for="fotousuario">Foto de usuario</label>
+                <input class="main__form__input" type="file" name="fotousuario" id="fotousuario">
+                <input class="main__form__input" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
+                <input class="main__form__input" type="password" name="confirmarcontrasena" id="confirmarcontrasena" placeholder="Confirmar contraseña">
+                <input class="main__form__input" type="submit" value="Enviar" id="submit">
+                <input class="main__form__input" type="reset" value="Borrar" id="reset">
             </form>
-            <footer class="footer">
-                <section class="footer__section">
-                    <div class="footer__section--content">
-                        <article class="footer__section__article">
-                            <i class="fa-solid fa-credit-card"></i>
-                            <h3>Pagá con tarjeta o en efectivo</h3>
-                            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
-                            </p>
-                        </article>
-                        <article class="footer__section__article">
-                            <i class="fa-solid fa-gift"></i>
-                            <h3>Envío gratis desde $ 2.500</h3>
-                            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
-                            </p>
-                        </article>
-                        <article class="footer__section__article">
-                            <i class="fa-solid fa-user-shield"></i>
-                            <h3>Seguridad, de principio a fin</h3>
-                            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
-                            </p>
-                        </article>
-                    </div>
-                    <h5>Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
-                </section>
-            </footer>
+        </fieldset>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__section">
+            <div class="footer__section--content">
+                <article class="footer__section__article">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h3>Pagá con tarjeta o en efectivo</h3>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+                    </p>
+                </article>
+                <article class="footer__section__article">
+                    <i class="fa-solid fa-gift"></i>
+                    <h3>Envío gratis desde $ 2.500</h3>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+                    </p>
+                </article>
+                <article class="footer__section__article">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h3>Seguridad, de principio a fin</h3>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+                    </p>
+                </article>
+            </div>
+            <h5>Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
+        </section>
+    </footer>
 </body>
 
 </html>
